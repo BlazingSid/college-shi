@@ -7,15 +7,17 @@ and calculate_total."""
 class ShoppingCart:
     def __init__(self):
         self.total = 0
-
+        
     def add_item(self, price):
         self.total += price
+        print(f"Added {price}rs worth, Cart Value:", self.total,"rs")
 
     def remove_item(self, price):
         self.total -= price
+        print(f"Removed {price}rs worth, Cart Value:", self.total,"rs")
 
     def calculate_total(self):
-        print("Total price:", self.total)
+        print("Total price:", self.total,"rs")
 
 
 cart = ShoppingCart()
